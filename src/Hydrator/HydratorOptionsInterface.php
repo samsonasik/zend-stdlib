@@ -8,12 +8,18 @@
  * @package   Zend_Stdlib
  */
 
-namespace ZendTest\Stdlib\SignalHandlers;
+namespace Zend\Stdlib\Hydrator;
 
-class ObjectCallback
+/**
+ * @category   Zend
+ * @package    Zend_Stdlib
+ * @subpackage Hydrator
+ */
+interface HydratorOptionsInterface
 {
-    public static function test()
-    {
-        return 'bar';
-    }
+    /**
+     * @param  array|\Traversable $options
+     * @return HydratorOptionsInterface
+     */
+    public function setOptions($options);
 }

@@ -8,12 +8,20 @@
  * @package   Zend_Stdlib
  */
 
-namespace ZendTest\Stdlib\SignalHandlers;
+namespace Zend\Stdlib;
 
-class ObjectCallback
+/**
+ * Interface to allow objects to have initialization logic
+ *
+ * @category   Zend
+ * @package    Zend_Stdlib
+ */
+interface InitializableInterface
 {
-    public static function test()
-    {
-        return 'bar';
-    }
+    /**
+     * Init an object
+     *
+     * @return void
+     */
+    public function init();
 }
