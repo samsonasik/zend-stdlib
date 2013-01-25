@@ -1,6 +1,6 @@
 {
     "name": "zendframework/zend-stdlib",
-    "description": "Zend\\Stdlib component",
+    "description": " ",
     "license": "BSD-3-Clause",
     "keywords": [
         "zf2",
@@ -15,7 +15,7 @@
         }
     },
     "require": {
-        "php": ">=5.3.23"
+        "php": ">=5.3.3"
     },
     "require-dev": {
         "zendframework/zend-eventmanager": "self.version",
@@ -30,7 +30,8 @@
         "zendframework/zend-eventmanager": "To support aggregate hydrator usage",
         "zendframework/zend-serializer": "Zend\\Serializer component",
         "zendframework/zend-servicemanager": "To support hydrator plugin manager usage",
-        "zendframework/zend-filter": "To support naming strategy hydrator usage"
+        "zendframework/zend-filter": "To support naming strategy hydrator usage",
+        "pecl-weakref": "Implementation of weak references for Stdlib\\CallbackHandler"
     },
     "extra": {
         "branch-alias": {
@@ -38,6 +39,7 @@
             "dev-develop": "2.4-dev"
         }
     },
+    "target-dir": "Zend/Stdlib",
     "autoload-dev": {
         "psr-4": {
             "ZendTest\\Stdlib\\": "test/Stdlib/"
